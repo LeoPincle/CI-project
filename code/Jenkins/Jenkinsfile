@@ -11,7 +11,7 @@ pipeline {
 
       stage ('Checkout SCM'){
         steps {
-          checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://dptrealtime@bitbucket.org/dptrealtime/3tier-terraform-deployment.git']]])
+          checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'LeoPincle', url: 'https://github.com/LeoPincle/CI-project.git']]])
         }
       }
 
